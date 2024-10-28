@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_col"
+    tools:context=".ui.createCard.CreateCardFG">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardsharesaveid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_310sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@id/addid"
+        app:strokeWidth="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardrootlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@color/white">
+
+            <EditText
+                android:id="@+id/drawing_input_fake"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/transparent"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/appfont"
+                android:gravity="center_horizontal"
+                android:text="@string/create"
+                android:textColor="@color/black"
+                android:textSize="23dp"
+                android:visibility="visible"
+                app:drawableTopCompat="@drawable/createcards"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/createimageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/fontcolorlistlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/bootomlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listfontcolorrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="3dp"
+            android:visibility="invisible"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:spanCount="2" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <LinearLayout
+        android:id="@+id/bootomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_54sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/addbgid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/intraappfont"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/add_bg"
+            android:textColor="@color/white"
+            android:textSize="@dimen/all_wishes_textsize"
+            app:drawableTopCompat="@drawable/addbg" />
+
+
+        <TextView
+            android:id="@+id/addtextid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/intraappfont"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/add_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/all_wishes_textsize"
+            app:drawableTopCompat="@drawable/addtext" />
+
+        <TextView
+            android:id="@+id/quoteid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/intraappfont"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/quotes"
+            android:textColor="@color/white"
+            android:textSize="@dimen/all_wishes_textsize"
+            app:drawableTopCompat="@drawable/quotesi" />
+
+        <TextView
+            android:id="@+id/fontsid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/intraappfont"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/fonts"
+            android:textColor="@color/white"
+            android:textSize="@dimen/all_wishes_textsize"
+            app:drawableTopCompat="@drawable/fonts" />
+
+        <TextView
+            android:id="@+id/textcolorid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/intraappfont"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/text_color"
+            android:textColor="@color/white"
+            android:textSize="@dimen/all_wishes_textsize"
+            app:drawableTopCompat="@drawable/textcolor" />
+
+        <TextView
+            android:id="@+id/stickersid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/intraappfont"
+            android:gravity="center"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/stickers"
+            android:textColor="@color/white"
+            android:textSize="@dimen/all_wishes_textsize"
+            app:drawableTopCompat="@drawable/stickers" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="3dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Happy Birthday Card Wishes</string>
+
+    <string name="mainscreen_title">Happy Birthday</string>
+
+    <string name="default_ad_config_string">{"Admob":0,"Inhouse":1}</string>
+    <string name="pp_url">https://www.greetingswishes.in/privacy-policy.php</string>
+    <string name="smid">1008</string>
+    <string name="enabledisable">https://adslink.s3.ap-southeast-2.amazonaws.com/shadab/onOFF+ad/Birthday+pro+onoff+15-10-2024.txt</string>
+<!--    <string name="enabledisable">https://adslink.s3.ap-southeast-2.amazonaws.com/shadab/onOFF+ad/Birthday+pro+onoff+06-5-24.txt</string>-->
+<!--    <string name="ad_config_url">https://adslink.s3.ap-southeast-2.amazonaws.com/shadab/Ad+congfile/Happy+Birthday+card+wishes+adconfig.txt</string>-->
+
+<!--    <string name="admob_app_id">ca-app-pub-5218630348394030~4257158131</string>-->
+<!--    <string name="admob_full_ad_id">ca-app-pub-5218630348394030/4764424599</string>-->
+<!--    <string name="admob_entry_full_ad_id">ca-app-pub-5218630348394030/6972705407</string>-->
+<!--    <string name="admob_open_ad_id">ca-app-pub-5218630348394030/9668765904</string>-->
+<!--    <string name="admob_banner_ad_id">ca-app-pub-5218630348394030/4172896645</string>-->
+<!--    <string name="admob_splash_banner">ca-app-pub-5218630348394030/4172896645</string>-->
+
+    <string name="entername">Enter Your Name(13 chars max)</string>
+    <string name="bgselect">Select a background for your Name Poem</string>
+    <string name="gn_name">Generate Name Poem</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share_app">Share App</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="want_to_exit">Do you want to exit?</string>
+    <string name="quotes">Quotes</string>
+    <string name="navigation_bar">Navigation Bar</string>
+    <string name="top_100_messages">Top 100 Messages</string>
+    <string name="share_image">Share Image</string>
+
+    <string name="share_frame">Share\nImage</string>
+    <string name="copy_text">Copy Text</string>
+    <string name="share_text">Share Text</string>
+    <string name="test_quote">Test Quote</string>
+    <string name="category_name">Category Name</string>
+    <string name="funny">Funny</string>
+    <string name="friends">Friends</string>
+    <string name="love">Love</string>
+    <string name="belated">Belated</string>
+    <string name="warm_messages">Warm Messages</string>
+    <string name="happy_birthday">Happy Birthday</string>
+    <string name="family">Family</string>
+    <string name="inspirational">Inspirational</string>
+    <string name="age_specific">Age Specific</string>
+    <string name="religious">Religious</string>
+    <string name="birthday_name_poem">Birthday Name Poem</string>
+    <string name="name_on_birthday_cake">Name on Cake</string>
+
+    <string name="choose_image">Select\nImage</string>
+    <string name="share">Share</string>
+    <string name="add_text_btn_ttl">Add\nText</string>
+    <string name="add_stickers_btn_ttl">Add\nStickers</string>
+    <string name="download_image">Save\nImages</string>
+    <string name="myquotes">Enter Text Here</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="remove_stickers_btn_ttl">Remove\nStickers</string>
+    <string name="double_click_input_text">Double click to enter text</string>
+    <string name="ab">AB</string>
+    <string name="save">Save</string>
+    <string name="view_all">View All</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="color">Color</string>
+    <string name="choose_background">Choose Background</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="edit">Edit</string>
+    <string name="stickers">Stickers</string>
+    <string name="text_color">Text Color</string>
+    <string name="fonts">Fonts</string>
+    <string name="add_text">Add Text</string>
+    <string name="add_image">Image</string>
+    <string name="add_bg">Add BG</string>
+    <string name="create">Create</string>
+    <string name="choose_stic">Choose Stickers </string>
+    <string name="choose_color">Choose Color</string>
+    <string name="choose_gradient">Choose Gradient</string>
+    <string name="create_cards">Create Cards</string>
+    <string name="home">Home</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="saved">Saved</string>
+    <string name="feedback">Feedback</string>
+    <string name="version">Version</string>
+    <string name="close">Close</string>
+    <string name="feedback_email_id">mailto:feedback@example.com</string>
+    <string name="images">Images</string>
+    <string name="mom">Mom</string>
+    <string name="no_Saved">Nothing Saved Here!!</string>
+    <string name="set_as_status">Set as Status</string>
+    <string name="removeConfirm">You are about to Remove this item From Saved List ?</string>
+    <string name="no_saved_items">No saved items</string>
+    <string name="you_have_unsaved_changes">You Have Unsaved Changes</string>
+    <string name="discard">Discard</string>
+    <string name="birthday_invitation">Birthday Invitation</string>
+
+    <string name="b_name">Birthday Boy/Girl Name</string>
+    <string name="party_date">16/02/2023 At 8PM</string>
+    <string name="b_party">Street No 123\n MyStreet Drive Road\n New Delhi </string>
+    <string name="age">10</string>
+    <string name="mobile">0123456789</string>
+    <string name="groom_father_name">Groom’s Father Name</string>
+    <string name="groom_mother_name">Groom’s Mother Name</string>
+    <string name="bride_name">Bride Name</string>
+    <string name="bride_father_name">Bride’s Father Name</string>
+    <string name="bride_mother_name">Bride’s Mother Name</string>
+    <string name="groom_name">Groom Name</string>
+    <string name="download">Download</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="ok">Ok</string>
+    <string name="go_to_collection">Go to Collection</string>
+    <string name="saved_successfully">Saved Successfully</string>
+    <string name="add_details">Add Details:</string>
+    <string name="enter_your_details">Enter Your Details Below To Preview Design</string>
+    <string name="birthday_boy_girl_name">Birthday Boy/Girl Name</string>
+    <string name="date">Date</string>
+
+
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_full_ad_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_entry_full_ad_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_open_ad_id">ca-app-pub-3940256099942544/341983524</string>
+    <string name="admob_banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_native_advance_ad_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_splash_banner">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="unity_game_id">NA</string>
+    <string name="unity_full_id">NA</string>
+    <string name="unity_entry_full_id">NA</string>
+    <string name="unity_banner_id">NA</string>
+
+    <string name="apploving_key">efS0Gr7d1lJ6oJaJteqiDHuQngxhAJ-pRf_eAAx8ds2CwfMWtCwcgLENtVrdBXdBlXe05buiLZeTIMTnaSz0ne</string>
+    <string name="applovin_id_fullAd">sdgdfgdf</string>
+    <string name="applovin_id_banner">dffhfhfg</string>
+    <string name="applovin_id_rect">hfghfgh</string>
+    <string name="applovin_native_id">ghfghfg</string>
+    <string name="applovin_small_native_id">hfghfgh</string>
+
+    <string name="fb_full_ads_id">NA</string>
+    <string name="fb_entry_full_ads_id">NA</string>
+    <string name="fb_native_ads_id">NA</string>
+    <string name="fb_native_banner_ads_id">NA</string>
+    <string name="fb_banner_ads_id">NA</string>
+    <string name="fb_med_banner_ads_id">NA</string>
+
+
+    <string name="contact_no">Contact No</string>
+    <string name="address">Address</string>
+</resources>

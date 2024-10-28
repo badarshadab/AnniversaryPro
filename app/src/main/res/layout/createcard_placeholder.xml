@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/id1"
+        android:layout_width="@dimen/_85sdp"
+        android:layout_height="@dimen/_85sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeWidth="2dp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        app:cardElevation="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_40sdp"
+        app:cardBackgroundColor="#B3B3B3" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/id2"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+
+        app:layout_constraintTop_toBottomOf="@+id/id1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeWidth="2dp"
+        app:cardElevation="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_40sdp"
+        app:cardBackgroundColor="#B3B3B3" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+
+        app:layout_constraintTop_toBottomOf="@+id/id2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:strokeWidth="2dp"
+        app:cardElevation="@dimen/_6sdp"
+        app:cardCornerRadius="@dimen/_40sdp"
+        app:cardBackgroundColor="#B3B3B3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

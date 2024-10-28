@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#E2304B</color>
+    <color name="colorPrimaryDark">#9C3E45</color>
+    <color name="colorAccent">#E2304B</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_color">#EFF2FF</color>
+    <color name="bg_col">#E8314D</color>
+    <color name="c_p">#ffb90000</color>
+    <color name="text_col">#3f3d82</color>
+    <color name="unselected_text_color">#5B5B5B</color>
+    <color name="toolbar_text_colo">#2A2E36</color>
+    <color name="cardbg">#E1EEF8</color>
+    <color name="card_bg">#FFF3F3</color>
+    <color name="transparent">#00ff0000</color>
+    <color name="trending_false">#5B5B5B</color>
+    <color name="red">#e73a3d</color>
+    <color name="createCard_fontitembg">#FFE5E5</color>
+    <color name="createCard_fontitencolor">#2A2E36</color>
+    <color name="status_bar_color">#9C3E45</color>
+    <color name="toolbar_col">#DF1342</color>
+    <color name="btnbg">#F2CACF</color>
+    <color name="bottomdilogline">#D9D9D9</color>
+    <color name="text_color">#111111</color>
+    <color name="btncolor">#FFEAEA</color>
+    <color name="nav_menu_bg">#E8314D</color>
+    <color name="tile_even">#2196F3</color>
+    <color name="text_col_nav">#2A2E36</color>
+    <color name="text_col_exit">#DF1342</color>
+    <color name="app_backgroudncolor">#f45158</color>
+    <color name="unselect_col_create_cards">#F2CACF</color>
+    <color name="tool_text">#350801</color>
+    <color name="tab_text_col">#000000</color>
+
+    <color name="text_col_mainScreen">#2A2E36</color>
+    <color name="download_color">#443C3C</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#fff</color>
+
+</resources>

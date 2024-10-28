@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "722038715839",
+    "project_id": "birthday-greetings-wishes",
+    "storage_bucket": "birthday-greetings-wishes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722038715839:android:8e83a5d8ffdf19b4d75d0a",
+        "android_client_info": {
+          "package_name": "birthdaygreetings.birthdayframe.greetingswishes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKYN031sr1fTdgtHXFYVc6qvo9O7wf16k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

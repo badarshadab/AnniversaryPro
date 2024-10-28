@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+
+    <dimen name="all_wishes_textsize">10sp</dimen>
+    <dimen name="title_textSize">15sp</dimen>
+
+    <!--    <dimen name="t_12">12sp</dimen>-->
+<!--    <dimen name="v_96">96dp</dimen>-->
+<!--    <dimen name="v_76">76dp</dimen>-->
+<!--    <dimen name="v_15">15dp</dimen>-->
+<!--    <dimen name="v_3">3dp</dimen>-->
+<!--    <dimen name="v_150">150dp</dimen>-->
+<!--    <dimen name="drawer_icon_text">12sp</dimen>-->
+<!--    <dimen name="viewpager_next_item_visible">36dp</dimen>-->
+<!--    <dimen name="viewpager_current_item_horizontal_margin">30dp</dimen>-->
+<!--    <dimen name="viewpager_current_item_card_horizontal_margin">42dp</dimen>-->
+<!--    <dimen name="addbgdilogtitlesize">@dimen/_14ssp</dimen>-->
+
+<!--    &lt;!&ndash;    <dimen name="native_banner_width">340dp</dimen>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <dimen name="native_banner_height">120dp</dimen>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <item name="native_banner_height" format="integer" type="dimen">-2dp</item>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <dimen name="v_32">32dp</dimen>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <dimen name="v_86">86dp</dimen>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <dimen name="v_7">7dp</dimen>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <dimen name="v_10">10dp</dimen>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <dimen name="v_4">4dp</dimen>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <dimen name="v_420">420dp</dimen>&ndash;&gt;-->
+<!--    &lt;!&ndash;    <dimen name="v_2">2dp</dimen>&ndash;&gt;-->
+
+
+</resources>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/nav_main">
+
+    <fragment
+        android:id="@+id/nav_main"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.MainFragment"
+        tools:layout="@layout/main_fragment_layout_new">
+
+        <action
+            android:id="@+id/action_nav_main_to_familycatfrag"
+            app:destination="@id/familycatfrag" />
+        <action
+            android:id="@+id/action_nav_main_to_quotesfrag"
+            app:destination="@id/quotesfrag" />
+        <action
+            android:id="@+id/action_nav_main_to_age_specif"
+            app:destination="@id/age_specif" />
+        <action
+            android:id="@+id/action_nav_main_to_happybirthdaysubcat"
+            app:destination="@id/happybirthdaysubcat" />
+        <action
+            android:id="@+id/action_nav_main_to_warm_messagessubcat"
+            app:destination="@id/warm_messagessubcat" />
+        <action
+            android:id="@+id/action_nav_main_to_name_poem"
+            app:destination="@id/name_poem" />
+        <action
+            android:id="@+id/action_nav_main_to_relion_subcat"
+            app:destination="@id/religion_subcat" />
+        <action
+            android:id="@+id/action_nav_main_to_age_specific"
+            app:destination="@id/age_specific" />
+        <action
+            android:id="@+id/action_nav_main_to_cat_type_frag"
+            app:destination="@id/cat_type_frag" />
+        <action
+            android:id="@+id/action_nav_main_to_create_card_fg"
+            app:destination="@id/create_card_fg" />
+        <action
+            android:id="@+id/action_nav_main_to_name_poem_frag"
+            app:destination="@id/name_poem_frag" />
+        <action
+            android:id="@+id/action_nav_main_to_saved_main_frag"
+            app:destination="@id/saved_main_frag" />
+        <action
+            android:id="@+id/action_nav_main_to_birthday_invitation_frag"
+            app:destination="@id/birthday_invitation_frag" />
+        <action
+            android:id="@+id/action_nav_main_to_video_maker_options_frag"
+            app:destination="@id/video_maker_options_frag" />
+        <action
+            android:id="@+id/action_nav_main_to_celebrities_main_frag"
+            app:destination="@id/celebrities_main_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/familycatfrag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.FamilyCategoryFragment"
+        tools:layout="@layout/gif_activity_main">
+
+        <action
+            android:id="@+id/action_familycatfrag_to_nav_main"
+            app:destination="@id/nav_main" />
+        <action
+            android:id="@+id/action_familycatfrag_to_gifsorryfrag"
+            app:destination="@id/gifsorryfrag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/age_specific"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.AgeSpecificFragment"
+        tools:layout="@layout/gif_activity_main">
+
+
+        <action
+            android:id="@+id/action_age_specific_to_nav_main"
+            app:destination="@id/nav_main" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quotesfrag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.QuotesFragment"
+        tools:layout="@layout/activity_quotes">
+
+        <action
+            android:id="@+id/action_quotesfrag_to_nav_main"
+            app:destination="@id/nav_main" />
+        <action
+            android:id="@+id/action_quotesfrag_to_quotes_previewfrag"
+            app:destination="@id/quotes_previewfrag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quotes_previewfrag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.QuotesPreviewFragment"
+        tools:layout="@layout/fragment_quotes_preview">
+
+
+        <action
+            android:id="@+id/action_quotes_previewfrag_to_quotesfrag"
+            app:destination="@id/quotesfrag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gifsorryfrag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.GifSorryFragment"
+        tools:layout="@layout/activity_gif">
+
+        <action
+            android:id="@+id/action_gifsorryfrag_to_familycatfrag"
+            app:destination="@id/familycatfrag" />
+        <action
+            android:id="@+id/action_gifsorryfrag_to_content_preview_frag"
+            app:destination="@id/content_preview_frag" />
+        <action
+            android:id="@+id/action_gifsorryfrag_to_frame_edit"
+            app:destination="@id/frame_edit" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/content_preview_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.ContentPreviewFragment"
+        tools:layout="@layout/fragment_content_preview">
+
+
+        <action
+            android:id="@+id/action_content_preview_frag_to_gifsorryfrag"
+            app:destination="@id/gifsorryfrag" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/happybirthdaysubcat"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.HappyBirthdaySubCatFragment"
+        tools:layout="@layout/activity_happy_birthday_sub_category">
+
+        <action
+            android:id="@+id/action_happybirthdaysubcat_to_nav_main"
+            app:destination="@id/nav_main" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/warm_messagessubcat"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.WarmMessageSubCatFragment"
+        tools:layout="@layout/activity_quotes">
+
+
+        <action
+            android:id="@+id/action_warm_messagessubcat_to_nav_main"
+            app:destination="@id/nav_main" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/religion_subcat"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.ReligiousSubCatFragment"
+        tools:layout="@layout/activity_quotes">
+
+
+        <action
+            android:id="@+id/action_relion_subcat_to_nav_main"
+            app:destination="@id/nav_main" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/name_poem"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.NamePoemResultFragment"
+        tools:layout="@layout/activity_name_peom_main">
+        <action
+            android:id="@+id/action_name_poem_to_nav_main"
+            app:destination="@id/nav_main" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frame_edit"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.FrameEditFragment"
+        tools:layout="@layout/fragment_frame_edit">
+
+
+        <action
+            android:id="@+id/action_frame_edit_to_gifsorryfrag"
+            app:destination="@id/gifsorryfrag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cat_type_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.CategoryTypeFragment"
+        tools:layout="@layout/category_type_lay">
+
+
+        <action
+            android:id="@+id/action_cat_type_frag_to_nav_main"
+            app:destination="@id/nav_main" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/create_card_fg"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.ui.createCard.CreateCardFG"
+        tools:layout="@layout/fragment_create_card_f_g">
+
+
+        <action
+            android:id="@+id/action_create_card_fg_to_nav_main"
+            app:destination="@id/nav_main" />
+        <action
+            android:id="@+id/action_create_card_fg_to_create_card_preview"
+            app:destination="@id/create_card_preview" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/create_card_preview"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.ui.createCard.CreateCardPreviewFragment"
+        tools:layout="@layout/fragment_create_card_preview">
+
+
+        <action
+            android:id="@+id/action_create_card_preview_to_create_card_fg"
+            app:destination="@id/create_card_fg" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/name_poem_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.NamePoemMainFragment"
+        tools:layout="@layout/activity_name_peom_main">
+
+
+        <action
+            android:id="@+id/action_name_poem_frag_to_nav_main"
+            app:destination="@id/nav_main" />
+        <action
+            android:id="@+id/action_name_poem_frag_to_name_poem_result_frag"
+            app:destination="@id/name_poem_result_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/name_poem_result_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.NamePoemResultFragment"
+        tools:layout="@layout/activity_name_poem_resultactivity">
+
+        <action
+            android:id="@+id/action_name_poem_result_frag_to_name_poem_frag"
+            app:destination="@id/name_poem_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/saved_main_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.SavedMainFragment"
+        tools:layout="@layout/savedmainfragment">
+
+        <action
+            android:id="@+id/action_saved_main_frag_to_nav_main"
+            app:destination="@id/nav_main" />
+        <action
+            android:id="@+id/action_saved_main_frag_to_saved_frag"
+            app:destination="@id/saved_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/saved_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.SavedFragment"
+        tools:layout="@layout/fragment_saved">
+
+
+        <action
+            android:id="@+id/action_saved_frag_to_saved_main_frag"
+            app:destination="@id/saved_main_frag" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/card_prev_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.invitationCard.CardPreviewFragment"
+        tools:layout="@layout/fragment_card_preview">
+
+
+        <action
+            android:id="@+id/action_card_prev_frag_to_invitation_edit_frag"
+            app:destination="@id/invitation_edit_frag" />
+        <action
+            android:id="@+id/action_card_prev_frag_to_birthday_invitation_frag"
+            app:destination="@id/birthday_invitation_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/invitation_edit_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.invitationCard.InvitationEditFragment"
+        tools:layout="@layout/fragment_invitation_preview">
+
+
+        <action
+            android:id="@+id/action_invitation_edit_frag_to_card_prev_frag"
+            app:destination="@id/card_prev_frag" />
+        <action
+            android:id="@+id/action_invitation_edit_frag_to_invitationviewall_frag"
+            app:destination="@id/invitationviewall_frag" />
+        <action
+            android:id="@+id/action_invitation_edit_frag_to_invitationviewall_frag2"
+            app:destination="@id/invitationviewall_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/invitationviewall_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.invitationCard.InvitationViewAllFragment"
+        tools:layout="@layout/fragment_invitation_view_all">
+
+
+        <action
+            android:id="@+id/action_invitationviewall_frag_to_invitation_edit_frag"
+            app:destination="@id/invitation_edit_frag" />
+        <action
+            android:id="@+id/action_invitationviewall_frag_to_birthday_invitation_frag"
+            app:destination="@id/birthday_invitation_frag" />
+        <action
+            android:id="@+id/action_invitationviewall_frag_to_invitation_edit_frag2"
+            app:destination="@id/invitation_edit_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/birthday_invitation_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.invitationCard.BirthdayFragment"
+        tools:layout="@layout/fragment_birthday">
+
+
+        <action
+            android:id="@+id/action_birthday_invitation_frag_to_invitationviewall_frag"
+            app:destination="@id/invitationviewall_frag" />
+        <action
+            android:id="@+id/action_birthday_invitation_frag_to_nav_main"
+            app:destination="@id/nav_main" />
+        <action
+            android:id="@+id/action_birthday_invitation_frag_to_card_prev_frag"
+            app:destination="@id/card_prev_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/video_maker_options_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.VideoMakerOptionsFragment"
+        tools:layout="@layout/videomakeroptions_layout"/>
+
+    <fragment
+        android:id="@+id/celebrities_main_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.CelebritiesMainFragment"
+        tools:layout="@layout/celebritiesmainfragment">
+        <action
+            android:id="@+id/action_celebrities_main_frag_to_celebrities_prev_frag"
+            app:destination="@id/celebrities_prev_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/celebrities_prev_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.CelebrityPreviewFragment"
+        tools:layout="@layout/fragment_celebrity_preview" >
+        <action
+            android:id="@+id/action_celebrities_prev_frag_to_celebrities_card_prev_frag"
+            app:destination="@id/celebrities_card_prev_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/celebrities_card_prev_frag"
+        android:name="birthdaygreetings.birthdayframe.greetingswishes.fragment.CelebrityCards_PreviewFragment"
+        tools:layout="@layout/fragment_celebrity_card_preview" />
+
+</navigation>

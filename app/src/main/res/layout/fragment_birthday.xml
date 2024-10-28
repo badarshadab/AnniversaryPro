@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scroll_view2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_col">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@id/birthday_ad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/crd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/user_birthday_boy_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:padding="@dimen/_3sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/user_birthday_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:padding="@dimen/_3sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/user_birthday_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:includeFontPadding="false"
+                        android:maxLines="3"
+                        android:padding="@dimen/_3sdp"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/user_birthday_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:padding="@dimen/_3sdp"
+                            app:layout_constraintEnd_toStartOf="@id/user_birthday_sub"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/user_birthday_sub"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/_7sdp"
+                            android:text="th Birthday"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/user_birthday_age"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/tv_add_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/sfpro"
+                android:text="@string/add_details"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card2" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sfprosemi"
+                android:text="@string/enter_your_details"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_add_details" />
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/tv_birthday_boy_name"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/tv_msg"-->
+            <!--            app:layout_constraintStart_toStartOf="@id/tv_msg"-->
+            <!--            android:text="Birthday Boy/Girl Name"-->
+            <!--            android:textColor="#5B5B5B"-->
+            <!--            android:textSize="14sp"-->
+            <!--            android:layout_marginTop="10dp"/>-->
+
+            <!--        <EditText-->
+            <!--            android:id="@+id/et_birthday_boy_name"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="40dp"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/tv_birthday_boy_name"-->
+            <!--            app:layout_constraintStart_toStartOf="@id/tv_msg"-->
+            <!--            app:layout_constraintEnd_toEndOf="@id/tv_msg"-->
+            <!--            android:background="@drawable/rounded_edit_bg"-->
+            <!--            android:hint="Birthday Boy/Girl Name"-->
+            <!--            android:textAlignment="center"-->
+            <!--            android:fontFamily="@font/sfpromedium"-->
+            <!--            android:textColor="#000000"-->
+            <!--            android:textColorHint="#000000"-->
+            <!--            android:maxLines="1"-->
+            <!--            android:maxLength="22"/>-->
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/tv_date_time"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/et_birthday_boy_name"-->
+            <!--            app:layout_constraintStart_toStartOf="@id/tv_msg"-->
+            <!--            android:text="@string/date_time"-->
+            <!--            android:textColor="#5B5B5B"-->
+            <!--            android:textSize="14sp"-->
+            <!--            android:layout_marginTop="10dp"/>-->
+
+            <!--        <EditText-->
+            <!--            android:id="@+id/et_date_time"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="40dp"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/tv_date_time"-->
+            <!--            app:layout_constraintStart_toStartOf="@id/tv_msg"-->
+            <!--            app:layout_constraintEnd_toEndOf="@id/tv_msg"-->
+            <!--            android:background="@drawable/rounded_edit_bg"-->
+            <!--            android:hint="Date  Time"-->
+            <!--            android:textAlignment="center"-->
+            <!--            android:gravity="center"-->
+            <!--            android:fontFamily="@font/sfpromedium"-->
+            <!--            android:textColor="#000000"-->
+            <!--            android:textColorHint="#000000"/>-->
+
+            <!--        <ImageView-->
+            <!--            android:id="@+id/iv_calendar"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            app:layout_constraintEnd_toEndOf="@id/et_date_time"-->
+            <!--            app:layout_constraintTop_toTopOf="@id/et_date_time"-->
+            <!--            app:layout_constraintBottom_toBottomOf="@id/et_date_time"-->
+            <!--            android:src="@drawable/baseline_calendar_month_24"-->
+            <!--            android:paddingEnd="@dimen/_4sdp"/>-->
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/tv_address_of_party"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/et_date_time"-->
+            <!--            app:layout_constraintStart_toStartOf="@id/tv_msg"-->
+            <!--            android:text="Address Of Party"-->
+            <!--            android:textColor="#5B5B5B"-->
+            <!--            android:textSize="14sp"-->
+            <!--            android:layout_marginTop="10dp"/>-->
+
+            <!--        <EditText-->
+            <!--            android:id="@+id/et_address_of_party"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="40dp"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/tv_address_of_party"-->
+            <!--            app:layout_constraintStart_toStartOf="@id/tv_msg"-->
+            <!--            app:layout_constraintEnd_toEndOf="@id/tv_msg"-->
+            <!--            android:background="@drawable/rounded_edit_bg"-->
+            <!--            android:hint="Address Of Party"-->
+            <!--            android:textAlignment="center"-->
+            <!--            android:fontFamily="@font/sfpromedium"-->
+            <!--            android:textColor="#000000"-->
+            <!--            android:textColorHint="#000000"-->
+            <!--            android:maxLines="3"/>-->
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/tv_age_boy"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/et_address_of_party"-->
+            <!--            app:layout_constraintStart_toStartOf="@id/tv_msg"-->
+            <!--            android:text="Age Of Birthday Boy/Girl"-->
+            <!--            android:textColor="#5B5B5B"-->
+            <!--            android:textSize="14sp"-->
+            <!--            android:layout_marginTop="10dp"/>-->
+
+            <!--        <EditText-->
+            <!--            android:id="@+id/et_age_boy"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="40dp"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/tv_age_boy"-->
+            <!--            app:layout_constraintStart_toStartOf="@id/tv_msg"-->
+            <!--            app:layout_constraintEnd_toEndOf="@id/tv_msg"-->
+            <!--            android:background="@drawable/rounded_edit_bg"-->
+            <!--            android:hint="Age Of Birthday Boy/Girl"-->
+            <!--            android:maxLength="2"-->
+            <!--            android:inputType="number"-->
+            <!--            android:textAlignment="center"-->
+            <!--            android:fontFamily="@font/sfpromedium"-->
+            <!--            android:textColor="#000000"-->
+            <!--            android:textColorHint="#000000"/>-->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:hint="@string/birthday_boy_girl_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_msg">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_birthday_boy_name"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField1"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:hint="@string/date"
+                app:hintTextAppearance="@style/TextLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/outlinedTextField">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_date_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageView
+                android:id="@+id/iv_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_4sdp"
+                android:src="@drawable/baseline_calendar_month_24"
+                app:layout_constraintBottom_toBottomOf="@id/outlinedTextField1"
+                app:layout_constraintEnd_toEndOf="@id/outlinedTextField1"
+                app:layout_constraintTop_toTopOf="@id/outlinedTextField1" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField2"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:hint="Address"
+                app:hintTextAppearance="@style/TextLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/outlinedTextField1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_address_of_party"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/outlinedTextField3"
+                style="@style/LoginTextInputLayoutStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:hint="Age"
+                app:hintTextAppearance="@style/TextLabel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/outlinedTextField2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_age_boy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!--        <com.google.android.material.button.MaterialButton-->
+            <!--            android:id="@+id/btn_submit"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            app:layout_constraintTop_toBottomOf="@id/outlinedTextField3"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            android:text="Preview"-->
+            <!--            android:backgroundTint="#FF4C4C"-->
+            <!--            app:cornerRadius="20dp"-->
+            <!--            android:textColor="@color/white"-->
+            <!--            android:fontFamily="@font/sfprosemi"/>-->
+
+            <ProgressBar
+                android:id="@+id/birthday_prg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/birthday_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:backgroundTint="#FF4C4C"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_preview"
+        app:tint="@color/white">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash">
+
+
+    <LinearLayout
+        android:id="@+id/text_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/curved_bg_white_small_radius"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3.0dip"
+            android:gravity="center"
+            android:text="@string/entername"
+            android:textColor="@android:color/black"
+            android:textSize="18.0sp" />
+
+        <EditText
+            android:id="@+id/editname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1.0dip"
+            android:background="@drawable/curved_bg_grey"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:inputType="textNoSuggestions"
+            android:maxLength="13"
+            android:text=""
+            android:textSize="20.0sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/selectbg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_lay"
+        android:layout_margin="5.0dip"
+        android:text="@string/bgselect"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <GridView
+        android:id="@+id/bggrid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/resultbtn"
+        android:layout_below="@+id/selectbg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginEnd="5.0dip"
+        android:layout_marginBottom="5.0dip"
+        android:listSelector="@color/c_p"
+        android:numColumns="3" />
+
+    <TextView
+        android:id="@+id/resultbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/native_ad"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:background="@drawable/mybutton"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="@string/gn_name"
+        android:textAllCaps="false"
+        android:textColor="@color/bg_col"
+        android:textSize="18.0sp"
+        android:textStyle="bold" />
+
+    <include
+        layout="@layout/native_ad_container"
+        android:id="@+id/native_ad" />
+</RelativeLayout>
