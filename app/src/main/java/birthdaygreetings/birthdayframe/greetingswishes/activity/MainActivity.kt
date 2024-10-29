@@ -86,7 +86,7 @@ class MainActivity : AppCompatActivity() {
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         navController = navHostFragment.navController
 //        requestPermissions()
-        b.navLay.cardView.setBackgroundResource(R.drawable.curved_bg_gradient)
+//        b.navLay.cardView.setBackgroundResource(R.drawable.curved_bg_gradient)
         setupActionBarWithNavController(navController)
         setupToolbar()
         val versionNa = getVersionName(this)

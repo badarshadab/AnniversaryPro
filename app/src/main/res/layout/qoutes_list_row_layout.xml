@@ -8,7 +8,7 @@
     android:clickable="true"
     android:focusable="true"
     android:padding="10dp"
-    app:cardBackgroundColor="@color/cardbg"
+    app:cardBackgroundColor="#FFCF676F"
     app:cardCornerRadius="15dp"
     app:cardElevation="10dp"
     app:strokeColor="@color/white"

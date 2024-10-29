@@ -3,61 +3,42 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/nav_menu_bg">
+    android:background="@drawable/splash">
 
     <ImageView
         android:id="@+id/back_button"
         android:layout_width="@dimen/_30sdp"
         android:layout_height="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_30sdp"
         android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:adjustViewBounds="true"
         android:onClick="backButtonClick"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/card_view"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_150sdp"
-        android:layout_gravity="center"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:padding="@dimen/_10sdp"
-        app:cardCornerRadius="15dp"
-        app:cardElevation="@dimen/_5sdp"
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:text="Menu"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/back_button">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/appiconid"
-            android:layout_width="@dimen/_120sdp"
-            android:layout_height="@dimen/_120sdp"
-            android:layout_gravity="center"
-            android:layout_margin="@dimen/_15sdp"
-            android:adjustViewBounds="true"
-            android:scaleType="fitXY"
-            android:src="@drawable/app_icon" />
-    </com.google.android.material.card.MaterialCardView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/btn_lay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_15sdp"
         android:paddingHorizontal="@dimen/_20sdp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_view">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_2sdp"
-            android:background="#F1311C"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/back_button">
 
 
         <com.google.android.material.card.MaterialCardView
@@ -68,6 +49,7 @@
             android:layout_margin="@dimen/_10sdp"
             android:onClick="savedItems"
             android:padding="@dimen/_10sdp"
+            app:cardBackgroundColor="#9C3E45"
             app:cardCornerRadius="15dp"
             app:cardElevation="@dimen/_5sdp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -78,7 +60,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp">
 
                 <ImageView
                     android:id="@+id/saved_iv"
@@ -119,6 +102,7 @@
             android:layout_gravity="center"
             android:layout_margin="@dimen/_10sdp"
             android:padding="@dimen/_10sdp"
+            app:cardBackgroundColor="#9C3E45"
             app:cardCornerRadius="15dp"
             app:cardElevation="@dimen/_5sdp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -129,7 +113,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp">
 
                 <ImageView
                     android:id="@+id/share_iv"
@@ -172,6 +157,7 @@
             android:layout_margin="@dimen/_10sdp"
             android:onClick="rateus"
             android:padding="@dimen/_10sdp"
+            app:cardBackgroundColor="#9C3E45"
             app:cardCornerRadius="15dp"
             app:cardElevation="@dimen/_5sdp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -182,7 +168,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp">
 
                 <ImageView
                     android:id="@+id/rate_us_iv"
@@ -224,6 +211,7 @@
             android:layout_margin="@dimen/_10sdp"
             android:onClick="feedback"
             android:padding="@dimen/_10sdp"
+            app:cardBackgroundColor="#9C3E45"
             app:cardCornerRadius="15dp"
             app:cardElevation="@dimen/_5sdp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -234,7 +222,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp">
 
                 <ImageView
                     android:id="@+id/feedback_iv"
@@ -276,6 +265,7 @@
             android:layout_margin="@dimen/_10sdp"
             android:onClick="privacyPolicy"
             android:padding="@dimen/_10sdp"
+            app:cardBackgroundColor="#9C3E45"
             app:cardCornerRadius="15dp"
             app:cardElevation="@dimen/_5sdp"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -286,7 +276,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp">
 
                 <ImageView
                     android:id="@+id/pp_iv"

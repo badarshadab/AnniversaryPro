@@ -5,9 +5,10 @@
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="375dp"
-        android:layout_height="312dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerInParent="true"
+        android:background="@drawable/splash_foreground"
         android:layout_marginEnd="2dp"
         android:adjustViewBounds="true" />
 
